@@ -1,6 +1,8 @@
 "use client";
 import { BiPlus } from "react-icons/bi";
 import { motion } from "framer-motion";
+import MouseFollow from "@/animation/MouseFollow";
+import ImageMouseFollow from "@/animation/MouseFollow";
 export default function Banner() {
   return (
     <div className="relative px-4 mt-18">
@@ -28,11 +30,14 @@ export default function Banner() {
         <div className="flex flex-col gap-8">
           {/* Card */}
           <div className="flex gap-5 bg-white rounded-2xl p-3 w-fit pr-30">
-            <img
-              src="/banner-img.jpg"
-              alt=""
-              className="object-cover rounded-2xl w-35"
-            />
+            <MouseFollow intensity={20} className="rounded-2xl">
+              {" "}
+              <img
+                src="/banner-img.jpg"
+                alt=""
+                className="object-cover rounded-2xl w-35 hover:scale-110"
+              />
+            </MouseFollow>
             <div className="flex flex-col py-3">
               {/* Name */}
               <div className="grow">

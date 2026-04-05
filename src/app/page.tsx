@@ -1,6 +1,8 @@
 import AgencySection from "@/components/AgencySection";
 import Banner from "@/components/Banner";
+import FeedbackSection from "@/components/FeedbackSection";
 import MarqueeSection from "@/components/Marquee";
+import Portfolio from "@/components/Portfolio";
 import Image from "next/image";
 
 export default function Home() {
@@ -11,6 +13,8 @@ export default function Home() {
         <AgencySection />
         <MarqueeSection />
       </div>
+      <Portfolio />
+      <FeedbackSection />
     </div>
   );
 }

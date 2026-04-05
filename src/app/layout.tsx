@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Funnel_Display } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/shared/Navbar";
+import Footer from "@/shared/Footer";
 
 const funnel = Funnel_Display({
   variable: "--font-funnel",
@@ -25,6 +26,8 @@ export default function RootLayout({
         <Navbar />
         <main>{children}</main>
         {/* Footer */}
+        <Footer />
+        <div className="fixed bottom-0 w-full h-5   blur-2xl bg-white/10"></div>
       </body>
     </html>
   );

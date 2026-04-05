@@ -125,7 +125,14 @@ export default function AgencySection() {
           <div>
             <div className="flex items-center">
               <span className="text-9xl font-medium leading-none tracking-tighter">
-                25
+                <CountUp
+                  start={2}
+                  end={25}
+                  duration={4}
+                  separator=""
+                  enableScrollSpy={true}
+                  scrollSpyOnce
+                />
               </span>
               <FiPlus className="text-6xl text-gray-300 ml-1 mt-2" />
             </div>
@@ -166,8 +173,15 @@ export default function AgencySection() {
                 />
               </div>
               <p className="text-lg font-medium text-[#111]">
-                <CountUp start={100} end={1200} duration={2.75} separator="" />+
-                happy users review
+                <CountUp
+                  start={100}
+                  end={1200}
+                  duration={2.75}
+                  separator=""
+                  enableScrollSpy={true}
+                  scrollSpyOnce
+                />
+                + happy users review
               </p>
             </div>
           </div>

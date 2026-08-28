@@ -11,7 +11,7 @@ export default function Banner() {
         src="https://floka.casethemes.net/wp-content/uploads/2025/06/home-1-video.mp4"
         className="w-full min-h-screen rounded-2xl "
         autoPlay
-        muted
+        // muted
         loop
       />
       {/* Content */}
